@@ -1,11 +1,11 @@
-### PHCDevworks Notifi for Rails 6 (Form Validation & Notification Engine)
-PHCDevworks Notifi Rails 6 engine with helpers for alerts and form validation notifications.  
+### PHCDevworks Notifications for Rails 6 (Form Validation & Notification Engine)
+PHCDevworks Notifications Rails 6 engine with helpers for alerts and form validation notifications.  
 
 * Add alert and form validation helpers ruby on rails.
 * Setup in seconds with only one line of code in the application_helper file.
 * Save time and keep your rails projects manageable, tidy and secure.
 
-#### Step 1 - Add PHCDevworks Notifi to your gemfile  
+#### Step 1 - Add PHCDevworks Notifications to your gemfile  
 
 	gem 'phcdevworks_notifications'
 	bundle install
