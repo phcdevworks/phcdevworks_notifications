@@ -1,0 +1,44 @@
+Started GET "/" for 180.190.79.239 at 2019-05-26 06:42:10 +0000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 416)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2163)
+
+
+Started GET "/" for 180.190.79.239 at 2019-05-26 06:46:19 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Website::WebpageController#index as HTML
+  Rendering website/webpage/index.html.erb within layouts/application
+  Rendered website/webpage/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5245)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 7536)
+
+
+  
+ActionView::Template::Error (undefined method `phc_title' for #<#<Class:0x0000560dc9f342b0>:0x0000560dc9f3d5e0>
+Did you mean?  phc_notifi):
+    1: <% phc_title "Example Title" %>
+    2: <% phc_title_tagline "Example Tagline" %>
+    3: 
+    4: <% phc_seo_title "Example SEO Page Title" %>
+  
+app/views/website/webpage/index.html.erb:1
+Started GET "/" for 180.190.79.239 at 2019-05-26 06:46:35 +0000
+Processing by Website::WebpageController#index as HTML
+  Rendering website/webpage/index.html.erb within layouts/application
+  Rendered website/webpage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms | Allocations: 286040)
+
+
+  
+LoadError (cannot load such file -- sass):
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 180.190.79.239 at 2019-05-26 06:50:51 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Website::WebpageController#index as HTML
+  Rendering website/webpage/index.html.erb within layouts/application
+  Rendered website/webpage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 291)
+Completed 200 OK in 183ms (Views: 181.0ms | ActiveRecord: 0.0ms | Allocations: 295900)
+
+

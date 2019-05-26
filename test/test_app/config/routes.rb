@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  mount PhcdevworksNotifications::Engine => "/phcdevworks_notifications"
+
+    # Index Route
+    root :to => 'website/webpage#index'
+
+    # Mount Engine
+    mount PhcdevworksNotifications::Engine => "/"
+
 end
