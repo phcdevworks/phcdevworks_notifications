@@ -2,7 +2,7 @@ module PhcdevworksNotifications
   module ApplicationHelper
   
     # PHCNotifi - Bootstrap Notification Helpers for Rails
-    def phc_notifi(flash_type)
+    def phc_notification(flash_type)
       case flash_type
         when 'success'
           'alert-success'
