@@ -1,12 +1,14 @@
-<div class="row">
-	<div class="col-md-12">
-        <div class="alert alert-outline-<%= phc_notification(flash_type) %> fade show" role="alert">
-            <div class="alert-text"><%= msg %></div>
-            <div class="alert-close">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true"><i class="la la-close"></i></span>
-                </button>
+<% flash.each do |flash_type, phc_notification_msg| %>
+    <div class="row">
+    	<div class="col-md-12">
+            <div class="alert alert-outline-<%= phc_notification(flash_type) %> fade show" role="alert">
+                <div class="alert-text"><%= phc_notification_msg %></div>
+                <div class="alert-close">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true"><i class="la la-close"></i></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<% end %>
