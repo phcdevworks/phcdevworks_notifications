@@ -1,7 +1,8 @@
 <% flash.each do |flash_type, phc_notification_msg| %>
     <div class="row">
-    	<div class="col-md-12">
-            <div class="alert alert-outline-<%= phc_notification(flash_type) %> fade show" role="alert">
+        <div class="col-md-12">
+            <div class="alert <%= phc_notification(flash_type) %> fade show" role="alert">
+                <!-- <div class="alert-icon"><i class="flaticon-<%= phc_notification(flash_type) %>"></i></div> -->
                 <div class="alert-text"><%= phc_notification_msg %></div>
                 <div class="alert-close">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">

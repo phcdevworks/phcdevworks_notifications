@@ -1,11 +1,11 @@
 <% if object.errors.any? %>
     <div class="alert alert-outline-danger fade show" role="alert">
-        <div class="alert-icon"><i class="flaticon-questions-circular-button"></i></div>
-        <h4 class="alert-heading">The form contains <%= pluralize(object.errors.count, "error") %>.</h4>
         <div class="alert-text">
+            <h4 class="alert-heading text-center">The form contains <%= pluralize(object.errors.count, "error") %>.</h4>
+            <br>
             <ul class="list-group">
                 <% object.errors.full_messages.each do |phc_notification_msg| %>
-                    <li class="list-group-item list-group-item-danger borderless"><%= phc_notification_msg %></li>
+                    <li class="list-group-item"><%= phc_notification_msg %></li>
                 <% end %>
             </ul>
         </div>
