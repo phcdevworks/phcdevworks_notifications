@@ -1,3 +1,3 @@
 module PhcdevworksNotifications
-    VERSION = '0.23.0'
+  VERSION = '0.34.0'
 end
