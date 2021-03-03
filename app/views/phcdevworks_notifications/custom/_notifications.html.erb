@@ -1,0 +1,8 @@
+<% flash.each do |flash_type, phc_notification_msg| %>
+<div class="alert <%= phc_notification(flash_type) %> alert-dismissable fade show" role="alert" id="phcdevworks_notifi_alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="text-center"><%= phc_notification_msg %></h4>
+</div>
+<% end %>
